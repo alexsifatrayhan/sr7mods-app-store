@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "MovieBox Pro",
+      "keyword": "movie, streaming, premium",
+      "file": "moviebox.html"
+    }
+  ]
+}
