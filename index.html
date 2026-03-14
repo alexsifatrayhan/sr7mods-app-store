@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR7 Mods Store</title>
+    <style>
+        :root {
+            --glass: rgba(255, 255, 255, 0.1);
+            --border: rgba(255, 255, 255, 0.2);
+            --text: #ffffff;
+        }
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header { text-align: center; margin-bottom: 30px; }
+        h1 { margin-bottom: 5px; font-size: 2rem; }
+        .sub-link a { 
+            color: #00d4ff; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.2rem;
+        }
+        .intro-text { margin: 15px 0; opacity: 0.8; }
+
+        /* Glassy Search Bar */
+        .search-container {
+            width: 90%;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+        #searchBar {
+            width: 100%;
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            color: white;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        /* App Grid Layout */
+        .app-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 columns as requested */
+            gap: 15px;
+            width: 100%;
+            max-width: 600px;
+        }
+        .app-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s;
+        }
+        .app-card:hover { transform: scale(1.05); }
+        .app-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .app-name { font-weight: bold; font-size: 1.1rem; display: block; }
+        .mod-tag { color: #00ffcc; font-size: 0.85rem; margin: 5px 0; display: block; }
+        .version { opacity: 0.6; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SR7 Mods App Store</h1>
+        <div class="sub-link">
+            <a href="https://t.me/sr7mods">𝐒𝐑𝟕 𝐌𝐨𝐝𝐬</a>
+        </div>
+        <p class="intro-text">You'll get many app's modded version in this website.</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search apps or keywords..." onkeyup="searchApp()">
+    </div>
+
+    <div class="app-grid" id="appGrid">
+        <a href="moviebox.html" class="app-card" data-name="MovieBox Pro" data-keyword="premium">
+            <img src="moviebox.png" alt="icon">
+            <span class="app-name">MovieBox Pro</span>
+            <span class="mod-tag">Lifetime Premium</span>
+            <span class="version">Version: 2.1.0</span>
+        </a>
+
+        <a href="spotify.html" class="app-card" data-name="Spotify" data-keyword="music">
+            <img src="spotify.png" alt="icon">
+            <span class="app-name">Spotify</span>
+            <span class="mod-tag">Amoled Mod</span>
+            <span class="version">Version: 8.8.0</span>
+        </a>
+    </div>
+
+    <script>
+        function searchApp() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let cards = document.getElementsByClassName('app-card');
+            let found = false;
+
+            for (let i = 0; i < cards.length; i++) {
+                let name = cards[i].getAttribute('data-name').toLowerCase();
+                let key = cards[i].getAttribute('data-keyword').toLowerCase();
+                
+                if (name.includes(input) || key.includes(input)) {
+                    cards[i].style.display = "";
+                    found = true;
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+
+            if (!found && input !== "") {
+                window.location.href = "not_found.html";
+            }
+        }
+    </script>
+</body>
+</html>
+
