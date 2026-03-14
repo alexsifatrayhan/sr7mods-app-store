@@ -2,8 +2,113 @@
   "apps": [
     {
       "name": "MovieBox Pro",
-      "keyword": "movie, streaming, premium",
+      "keyword": "movie, anime, streaming, premium",
       "file": "moviebox.html"
+    },
+    {
+      "name": "Spotify",
+      "keyword": "music, songs, amoled",
+      "file": "spotify.html"
+    },
+    {
+      "name": "Ruler Mod",
+      "keyword": "scale, ruler",
+      "file": "ruler.html"
+    },
+    {
+      "name": "SnapTube Premium",
+       "keyword": "snaptube, download, youtube",
+       "file": "snaptube.html"
+    },
+    {
+       "name": "1dm+",
+        "keyword": "idm, 1dm, download, browser",
+        "file": "1dm+.html"
+    },
+    {
+       "name": "ForceNet",
+        "keyword": "Network, 4g, 5g, lte, force 4g",
+        "file": "forcenet.html"
+    },
+    {
+       "name": "Mx Player Pro",
+        "keyword": "mx player, mx, player, music, song",
+        "file": "mxplayer.html"
+    },
+    {
+       "name": "SR7 ActRec",
+       "keyword": "activity, modding tool, current activity"
+       "file": "sr7_actrec.html"
+    },
+    {
+        "name": "PixelLab Mod",
+        "keyword": "photo, editor, pixellab",
+        "file": "pixellab.html"
+    },
+    {
+        "name": "YouTube Premium",
+        "keyword": "youtube, revanced, morphe, premium",
+        "file": "youtube.html"
+    },
+    {
+         "name": "Efiko Pro",
+         "keyword": "video, video editor, enhancher, editor, efiko",
+         "file": "efiko.html"
+    },
+    {
+        "name": "AIDE LiteMod",
+        "keyword": "aide, android studio, app maker, maker, litemod",
+        "file": "aide_litemod.png"
+    },
+    {
+        "name": "AntiSplit M",
+        "keyword": "apktook, apk, split, antisplit",
+        "file": "antisplit_m.html"
+    },
+    {
+        "name": "Magic Eraser Pro",
+        "keyword": "photo editor, magic, magic eraser, editor, ai",
+        "file": "magiceraser.html"
+    },
+    {
+        "name": "CD Romatic-Slowed Reverb",
+        "keyword": "music, editor, song, lofi, slowed reverb, reverb, cd romantic",
+        "file": "cd_romantic.html"
+    },
+    {
+        "name": "Cloud Stream"
+        "keyword": "cloud stream, stream, movie, anime, cartoon",
+        "file": "cloudstream.html"
+    },
+    {
+        "name": "Truecaller Premium",
+        "keyword": "caller id, truecaller, eyecon, spam",
+        "file": "truecaller.html"
+    },
+    {
+        "name": "MochiCloner Premium",
+        "keyword": "appcloner, cloner, mochicloner",
+        "file": "mochicloner.html"
+    },
+    {
+        "name": "বিশ্ববিদ্যালয় প্রশ্নব্যাংক",
+        "keyword": "questionbank, admission, national university, university, প্রশ্নব্যাংক, বিশ্ববিদ্যালয়, এডমিশন, অ্যাডমিশন, জাতীয় বিশ্ববিদ্যালয়, গুচ্ছ, জিএসটি, gst",
+        "file": "un_questionbank.html"
+    },
+    {
+        "name": "NUQB",
+        "keyword": "national university, questionbank, admission, জাতীয় বিশ্ববিদ্যালয়, বিশ্ববিদ্যালয়, ভর্তি সহায়িকা, প্রশ্নব্যাংক,
+        "file": "NUQB.html"
+    },
+    {
+        "name": "Fake Chat Pro",
+        "keyword": "fake, chat, fake chat, fakechat, fake messenger, messenger"
+        "file": "fakechat.html"
+    },
+    {
+        "name": "Whatsfake Pro",
+        "keyword": "fake, fakechat, whatsapp, fake whatsapp",
+        "file": "whatsfake.html"
     }
   ]
 }
