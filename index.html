@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR7 Mods Store</title>
+    <style>
+        :root {
+            --glass: rgba(255, 255, 255, 0.1);
+            --border: rgba(255, 255, 255, 0.2);
+            --text: #ffffff;
+        }
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header { text-align: center; margin-bottom: 30px; }
+        h1 { margin-bottom: 5px; font-size: 2rem; }
+        .sub-link a { 
+            color: #00d4ff; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.2rem;
+        }
+        .intro-text { margin: 15px 0; opacity: 0.8; }
+
+        /* Glassy Search Bar */
+        .search-container {
+            width: 90%;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+        #searchBar {
+            width: 100%;
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px solid var(--border);
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            color: white;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        /* App Grid Layout */
+        .app-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 columns as requested */
+            gap: 15px;
+            width: 100%;
+            max-width: 600px;
+        }
+        .app-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s;
+        }
+        .app-card:hover { transform: scale(1.05); }
+        .app-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .app-name { font-weight: bold; font-size: 1.1rem; display: block; }
+        .mod-tag { color: #00ffcc; font-size: 0.85rem; margin: 5px 0; display: block; }
+        .version { opacity: 0.6; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SR7 Mods App Store</h1>
+        <div class="sub-link">
+            <a href="https://t.me/sr7mods">𝐒𝐑𝟕 𝐌𝐨𝐝𝐬</a>
+        </div>
+        <p class="intro-text">You'll get many app's modded version in this website.</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search apps or keywords..." onkeyup="searchApp()">
+    </div>
+
+    <div class="app-grid" id="appGrid">
+        <a href="moviebox.html" class="app-card" data-name="MovieBox Pro" data-keyword="premium">
+            <img src="moviebox.png" alt="icon">
+            <span class="app-name">MovieBox Pro</span>
+            <span class="mod-tag">Lifetime Premium</span>
+            <span class="version">Version: 3.0.07.0822.03</span>
+        </a>
+
+        <a href="spotify.html" class="app-card" data-name="Spotify" data-keyword="music">
+            <img src="spotify.png" alt="icon">
+            <span class="app-name">Spotify</span>
+            <span class="mod-tag">Premium Unlocked</span>
+            <span class="version">Version: 9.1.28.2252</span>
+        </a>
+        <a href="youtube.html" class="app-card" data-name="YouTube" data-keyword="youtube">
+            <img src="youtube.png" alt="icon">
+            <span class="app-name">SR7 YouTube</span>
+            <span class="mod-tag">Premium and Modded</span>
+            <span class="version">Version: 20.40.45</span>
+        </a>
+        <a href="mxplayer.html" class="app-card" data-name="MX Player Pro" data-keyword="player">
+            <img src="mxplayer.png" alt="icon">
+            <span class="app-name">MX Player Pro</span>
+            <span class="mod-tag">Full Premium Unlocked</span>
+            <span class="version">Version: 2.72.2</span>
+        </a>
+        <a href="1dm+.html" class="app-card" data-name="1DM+" data-keyword="downloader">
+            <img src="1dm+.png" alt="icon">
+            <span class="app-name">1DM+</span>
+            <span class="mod-tag">Plus Version</span>
+            <span class="version">Version: 21.0</span>
+        </a>
+        
+        <a href="aide_litemod.html" class="app-card" data-name="AIDE LiteMod" data-keyword="aide">
+            <img src="aide_litemod.png" alt="icon">
+            <span class="app-name">AIDE LiteMod</span>
+            <span class="mod-tag">Lite Version of AIDE</span>
+            <span class="version">Version: 3.2.190514</span>
+        </a>
+        
+        <a href="androvid.html" class="app-card" data-name="AndroVid Pro" data-keyword="">
+            <img src="androvid.png" alt="icon">
+            <span class="app-name">AndroVid Pro</span>
+            <span class="mod-tag">Premium Unlocked</span>
+            <span class="version">Version: 7.1.0.3</span>
+        </a>
+        
+        <a href="antisplit_m.html" class="app-card" data-name="AntiSplit M" data-keyword="apktool">
+            <img src="antisplit_m.png" alt="icon">
+            <span class="app-name">AntiSplit M</span>
+            <span class="mod-tag">Apks to Apk converter</span>
+            <span class="version">Version: 2.2.6</span>
+        </a>
+        
+        <a href="apkeditor.html" class="app-card" data-name="APK Editor Pro" data-keyword="apktool">
+            <img src="apkeditor.png" alt="icon">
+            <span class="app-name">APK Editor Pro</span>
+            <span class="mod-tag">Pro Version</span>
+            <span class="version">Version: 4.2</span>
+        </a>
+        
+        <a href="cloudstream.html" class="app-card" data-name="Cloud Stream" data-keyword="Movie">
+            <img src="cloudstream.png" alt="icon">
+            <span class="app-name">Cloud Stream</span>
+            <span class="mod-tag">Release</span>
+            <span class="version">Version: 4.6.0</span>
+        </a>
+        
+        <a href="efiko.html" class="app-card" data-name="Efiko Pro" data-keyword="editor">
+            <img src="efiko.png" alt="icon">
+            <span class="app-name">Efiko Pro</span>
+            <span class="mod-tag">Pro Unlocked</span>
+            <span class="version">Version: 1.6.2</span>
+        </a>
+        
+        <a href="whatsfake.html" class="app-card" data-name="Whatsfake Pro" data-keyword="fakechat">
+            <img src="whatsfake.png" alt="icon">
+            <span class="app-name">Whatsfake Pro</span>
+            <span class="mod-tag">Pro & Disguised</span>
+            <span class="version">Version: 3.2</span>
+        </a>
+        
+        <a href="fakechat.html" class="app-card" data-name="Fake Chat" data-keyword="fakechat">
+            <img src="fakechat.png" alt="icon">
+            <span class="app-name">Fake Chat Pro</span>
+            <span class="mod-tag">Pro & Disguised</span>
+            <span class="version">Version: 10.16</span>
+        </a>
+        
+        <a href="forcenet.html" class="app-card" data-name="ForceNet" data-keyword="">
+            <img src="forcenet.png" alt="icon">
+            <span class="app-name">ForceNet</span>
+            <span class="mod-tag">Lite</span>
+            <span class="version">Version: 2.0</span>
+        </a>
+        
+        <a href="magiceraser.html" class="app-card" data-name="Magic Eraser Pro" data-keyword="editor">
+            <img src="magiceraser.png" alt="icon">
+            <span class="app-name">Magic Eraser Pro</span>
+            <span class="mod-tag">Premium Mod</span>
+            <span class="version">Version: 2.65.24</span>
+        </a>
+        
+        <a href="mochicloner.html" class="app-card" data-name="MochiCloner Pro" data-keyword="cloner">
+            <img src="mochicloner.png" alt="icon">
+            <span class="app-name">MochiCloner Pro</span>
+            <span class="mod-tag">Lifetime Membership</span>
+            <span class="version">Version: 2.6.3</span>
+        </a>
+        
+        <a href="NUQB.html" class="app-card" data-name="NUQB Mod" data-keyword="প্রশ্নব্যাংক">
+            <img src="NUQB.png" alt="icon">
+            <span class="app-name">NUQB Mod</span>
+            <span class="mod-tag">Restriction Removed</span>
+            <span class="version">Version: 1.4.6</span>
+        </a>
+        
+        <a href="pixellab.html" class="app-card" data-name="PixelLab Pro" data-keyword="editor">
+            <img src="pixellab.png" alt="icon">
+            <span class="app-name">PixelLab Pro</span>
+            <span class="mod-tag">Pro Mod</span>
+            <span class="version">Version: Universal</span>
+        </a>
+        
+        <a href="picsart.html" class="app-card" data-name="PicsArt Gold" data-keyword="editor">
+            <img src="picsart.png" alt="icon">
+            <span class="app-name">PicsArt Gold</span>
+            <span class="mod-tag">Gold Mod</span>
+            <span class="version">Version: 30.1.01</span>
+        </a>
+        
+        <a href="protonvpn.html" class="app-card" data-name="Proton VPN Pro" data-keyword="vpn">
+            <img src="protonvpn.png" alt="icon">
+            <span class="app-name">Proton VPN Pro</span>
+            <span class="mod-tag">All Server Available</span>
+            <span class="version">Version: 5.13.61.0</span>
+        </a>
+        
+        <a href="ruler.html" class="app-card" data-name="Ruler Mod" data-keyword="ruler">
+            <img src="ruler.png" alt="icon">
+            <span class="app-name">Ruler Mod</span>
+            <span class="mod-tag">Modded</span>
+            <span class="version">Version: 9.2</span>
+        </a>
+        
+        <a href="cd_romantic.html" class="app-card" data-name="CD Romantic" data-keyword="lofi">
+            <img src="cd_romantic.png" alt="icon">
+            <span class="app-name">CD Romantic - Slowed Reverb, Sped up & LoFi Maker</span>
+            <span class="mod-tag">Pro Mod</span>
+            <span class="version">Version: 3.1.3</span>
+        </a>
+        
+        <a href="snaptube.html" class="app-card" data-name="SnapTube Pro" data-keyword="youtube">
+            <img src=".png" alt="icon">
+            <span class="app-name">SnapTube Pro</span>
+            <span class="mod-tag">Premium Unlocked</span>
+            <span class="version">Version: 7.59.2.75259150</span>
+        </a>
+        
+        <a href="sr7_actrec.html" class="app-card" data-name="SR7 ActRec" data-keyword="current activity">
+            <img src="sr7_actrec.png" alt="icon">
+            <span class="app-name">SR7 ActRec</span>
+            <span class="mod-tag">Current activity tracker</span>
+            <span class="version">Version: 1.0</span>
+        </a>
+        
+        <a href="truecaller.html" class="app-card" data-name="Truecaller Gold" data-keyword="truecaller">
+            <img src="truecaller.png" alt="icon">
+            <span class="app-name">Truecaller Gold</span>
+            <span class="mod-tag">Lifetime Premium</span>
+            <span class="version">Version: 26.9.7</span>
+        </a>
+        
+        <a href="videoconverter.html" class="app-card" data-name="Video Converter Pro" data-keyword="video editor">
+            <img src="videoconverter.png" alt="icon">
+            <span class="app-name">Video Converter Pro</span>
+            <span class="mod-tag">Premium Unlocked</span>
+            <span class="version">Version: 14.0.3</span>
+        </a>
+        
+        <a href="vivuvideo.html" class="app-card" data-name="Vivu Video Pro" data-keyword="video">
+            <img src="vivuvideo.png" alt="icon">
+            <span class="app-name">Vivu Video Pro</span>
+            <span class="mod-tag">Premium Unlocked</span>
+            <span class="version">Version: 224661</span>
+        </a>
+        
+        <a href="uni_questionbank.html" class="app-card" data-name="বিশ্ববিদ্যালয় ভর্তি প্রশ্নব্যাংক" data-keyword="প্রশ্নব্যাংক">
+            <img src="uni_questionbank.png" alt="icon">
+            <span class="app-name">বিশ্ববিদ্যালয় ভর্তি প্রশ্নব্যাংক</span>
+            <span class="mod-tag">Restriction Removed</span>
+            <span class="version">Version: 1.0.23</span>
+        </a>
+    </div>
+
+    <script>
+        function searchApp() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let cards = document.getElementsByClassName('app-card');
+            let found = false;
+
+            for (let i = 0; i < cards.length; i++) {
+                let name = cards[i].getAttribute('data-name').toLowerCase();
+                let key = cards[i].getAttribute('data-keyword').toLowerCase();
+                
+                if (name.includes(input) || key.includes(input)) {
+                    cards[i].style.display = "";
+                    found = true;
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+
+            if (!found && input !== "") {
+                window.location.href = "not_found.html";
+            }
+        }
+    </script>
+</body>
+</html>
