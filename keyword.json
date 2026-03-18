@@ -1,5 +1,11 @@
 {
   "apps": [
+     
+    {
+      "name": "Smart Panel",
+      "keyword": "infinix, game turbo, turbo",
+      "file": "smartpanel.html"
+    },
     {
       "name": "MovieBox Pro",
       "keyword": "movie, anime, streaming, premium",
