@@ -6,8 +6,13 @@
       "file": "moviebox.html"
     },
     {
+      "name": "Echo",
+      "keyword": "spotify, echo, music, songs, amoled",
+      "file": "echo.html"
+    },
+    {
       "name": "Spotify",
-      "keyword": "music, songs, amoled",
+      "keyword": "spotify,music, songs, amoled",
       "file": "spotify.html"
     },
     {
