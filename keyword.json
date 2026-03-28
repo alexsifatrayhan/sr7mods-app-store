@@ -177,5 +177,10 @@
       "keyword": "miui, security",
       "file": "miui security.html"
     },
+    {
+      "name": "SR7 Books",
+      "keyword": "question, guide, প্রশ্ন, বই, গাইড, book, sr7",
+      "file": "sr7books.html"
+    }
   ]
 }
