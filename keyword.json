@@ -181,6 +181,11 @@
       "name": "SR7 Books",
       "keyword": "question, guide, প্রশ্ন, বই, গাইড, book, sr7",
       "file": "sr7books.html"
+    },
+    {
+      "name": "Class 9-10 Guide",
+      "keyword": "book, guide, 9",
+      "file": "class9guide.html"
     }
   ]
 }
