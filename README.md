@@ -5,7 +5,7 @@
 ### 📝 **Release Overview**
 This update marks a significant milestone in the development of the **SR7 Mods ecosystem**. Designed for seamless app management and high-speed delivery of modded packages.
 
-### 🛠 **Modder's Toolbox**
+### 🛠 **Contains**
 > [!TIP]
 >You'll find a Huge Collection of Modded Application, which are modded by 𝐒𝐑𝟕 𝐌𝐨𝐝𝐬.
 
